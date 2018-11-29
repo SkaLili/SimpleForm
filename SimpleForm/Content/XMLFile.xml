@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<persons>
+  <person name="Nika Voronina">
+    <hotman>True</hotman>
+    <talkative>23</talkative>
+  </person>
+  <person name="Лилия">
+    <hotman>false</hotman>
+    <talkative>11</talkative>
+  </person>
+  <person name="Albina">
+    <hotman>false</hotman>
+    <talkative>17</talkative>
+  </person>
+  <person name="Kate">
+    <hotman>false</hotman>
+    <talkative>100</talkative>
+  </person>
+</persons>

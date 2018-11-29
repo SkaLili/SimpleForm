@@ -1,0 +1,48 @@
+﻿@model SimpleForm.Models.Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/StyleSheet.css"rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <div class="form-statement">
+        <form action="/Home/SetData" method="post">
+
+            <p align="center">Анкета </p>
+            <p text-indent=20px>Если хочешь влиться в наш дружный коллектив, может расскажешь немного о себе?</p>
+            <p> 
+                <label for="username"> Меня зовут:</label> <br />
+                <input type="text" size="35" id ="username" name="Name" placeholder="напиши, как к тебе обращаться?" />
+            </p>
+             
+            <p>
+                <label for="che"> Когда я захожу в комнату, я ... </label><br>
+                <input type="radio" id="che" name="HotMan" value="false" />Закрываю окно<br>
+                <input type="radio" id="che" name="HotMan" value="true" />Открываю окно<br>
+                <input type="radio" id="che" name="HotMan" value="false" />Что за проблема с окнами?<br>
+            </p>
+            <p>
+                <label for="usertalk"> Комфортное для меня время общения с коллегами: </label>
+                <input type="range" min="0" max="100" list="rangeList" name="Talkative" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                <span id="rangeValue">50</span> % от рабочего времени
+            </p>
+            <p>
+                <label for="str">Мне интересны следующие направления и технологии</label>
+                <textarea id="str" placeholder="напиши что-нибудь)" cols="40" rows="3" ></textarea>
+            </p>
+            <input type="submit" value="Отправить" />
+
+
+</form>
+    </div>
+</body>
+</html>

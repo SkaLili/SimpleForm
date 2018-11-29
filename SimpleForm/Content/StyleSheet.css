@@ -1,0 +1,11 @@
+﻿body {
+    font-family: Tahoma;
+}
+form {
+        width: 500px;
+        height: 600px; 
+        background: #ffffff;
+        box-shadow: 0 0 5px 2px;
+        padding: 20px;
+       
+    }
